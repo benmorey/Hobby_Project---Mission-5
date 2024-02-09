@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Calculator";
+}
+<h1>Tutoring Class Price @ViewData["Title"]</h1><br />
+
+<div class="row text-start px-auto">
+    <div class="col">
+        <h2>Hourly Rate Calculator</h2>
+        <div class="card" style="width: 18rem">
+            <div class="card-body" >
+                <div class="card-title">Hourly Rate</div>
+                <div class="card-subtitle mb-2 text-muted">In-Person</div>
+                <p class="card-text">This involves in person painting, sketching, critiques, and addtional live demonstrations</p>
+                <b>$20.50</b>
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <h6>Enter hours spent:</h6>
+            <input type="number" id="hours" min="0" step="0.5" placeholder="Enter hours"><br /><br />
+        </div>
+        <div>
+            <h6>Enter Tips ($):</h6>
+            <input type="number" id="tip" min="0" step="0.01" placeholder="Enter hourly rate"><br /><br />
+        </div>
+        <button id="calculateButton">Calculate</button>
+    </div>
+    <div class="col">
+        <h2>Total Cost</h2>
+        <div class="card">
+            <h4 id="totalCost">$0.00</h4>
+        </div>
+    </div>
+
+</div>
+
+<script src="c:\users\dbmor\source\repos\hobby_project - mission 5\hobby_project - mission 5\wwwroot\js\site.js"></script>
+
+
